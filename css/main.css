@@ -44,7 +44,7 @@ body > main {
   grid-area: main;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.5fr;
   grid-template-areas: 
     "projects announcements"
     "projects trending"
@@ -72,6 +72,48 @@ body > main {
   grid-area: trending;
 }
 
+/* Responsive */
+
+@media only screen and (max-width: 950px) {
+  body > main {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "projects"
+    "announcements" 
+    "trending";
+  }
+
+  body > header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0em !important;
+  }
+
+  body > header > form {
+    grid-column: span 2;
+  }
+
+  body > header > #header-welcome {
+    grid-column: span 2;
+  }
+
+  body > aside #logo > div,
+  body > aside a > div {
+    display: none;
+  }
+
+  body > aside #logo,
+  body > aside a {
+    grid-template-columns: 50px;
+    gap: 0em !important;
+  }
+}
+
+@media only screen and (min-width:  0px) and (max-width: 1200px) {
+  #projects > .container {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* Aside */
 body > aside {
