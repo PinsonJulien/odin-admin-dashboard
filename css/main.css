@@ -29,18 +29,18 @@ body {
   ;
 }
 
-body > aside {
+aside {
   grid-area: aside;
 }
 
-body > header {
+header {
   grid-area: header;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
 }
 
-body > main {
+main {
   grid-area: main;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -75,7 +75,7 @@ body > main {
 /* Responsive */
 
 @media only screen and (max-width: 950px) {
-  body > main {
+  main {
     grid-template-columns: 1fr;
     grid-template-areas: 
     "projects"
@@ -83,27 +83,27 @@ body > main {
     "trending";
   }
 
-  body > header {
+  header {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0em !important;
   }
 
-  body > header > form {
+  header > form {
     grid-column: span 2;
   }
 
-  body > header > #header-welcome {
+  header > #header-welcome {
     grid-column: span 2;
   }
 
-  body > aside #logo > div,
-  body > aside a > div {
+  aside #logo > div,
+  aside a > div {
     display: none;
   }
 
-  body > aside #logo,
-  body > aside a {
+  aside #logo,
+  aside a {
     grid-template-columns: 50px;
     gap: 0em !important;
   }
@@ -116,7 +116,7 @@ body > main {
 }
 
 /* Aside */
-body > aside {
+aside {
   display: flex;
   flex-direction: column;
   gap: 3em;
@@ -126,12 +126,12 @@ body > aside {
   font-size: 1.2em;
 }
 
-body > aside #logo {
+aside #logo {
   font-size: 1.4em;
 }
 
-body > aside #logo,
-body > aside a {
+aside #logo,
+aside a {
   display: grid;
   grid-template-columns: 50px 5fr;
   grid-template-rows: auto;
@@ -142,100 +142,100 @@ body > aside a {
   color: #f5f5f5;
 }
 
-body > aside ul {
+aside ul {
   display: flex;
   flex-direction: column;
   gap: 1.2em;
 }
 
-body > aside svg {
+aside svg {
   width: 25px;
   justify-self: center;
 }
 
-body > aside #logo svg {
+aside #logo svg {
   width: 40px;
 }
 
 
 /* Header */
-body > header {
+header {
   padding: 1em 2em 1em 2em;
   gap: 2em;
   background-color: #f5f5f5;
 }
 
-body > header > form {
+header > form {
   display: flex;
   gap: 1em;
   height: 100%;
 }
 
-body > header > form > * {
+header > form > * {
   height: 50%;
   align-self: center;
 }
 
-body > header > form svg {
+header > form svg {
   height: 100%;
 }
 
-body > header > form input {
+header > form input {
   flex-grow: 1;
   border: none;
   background-color: #e2e8f0;
 }
 
-body > header > #header-account {
+header > #header-account {
   display: flex;
   gap: 1em;
   align-items: center;
   justify-content: end;
 }
 
-body > header > #header-account p {
+header > #header-account p {
   font-weight: 800;
   font-size: 1.0em;
   
 }
 
-body > header > #header-account svg {
+header > #header-account svg {
   width: 25px;
 }
 
-body > header > #header-account img {
+header > #header-account img {
   width: 50px;
 }
 
-body > header > #header-welcome {
+header > #header-welcome {
   display: flex;
   gap: 1em;
   align-items: center;
 }
 
-body > header > #header-welcome img {
+header > #header-welcome img {
   width: 75px;
 }
 
-body > header > #header-welcome > div {
+header > #header-welcome > div {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 } 
 
-body > header > #header-welcome p {
+header > #header-welcome p {
   font-weight: 700;
 }
 
-body > header > #header-welcome p:first-child {
+header > #header-welcome p:first-child {
   font-size: 0.9em;
 }
 
-body > header > #header-welcome p:last-child {
+header > #header-welcome p:last-child {
   font-size: 1.3em;
 }
 
-body > header > #header-buttons {
+header > #header-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -243,7 +243,7 @@ body > header > #header-buttons {
   align-items: center;
 }
 
-body > header > #header-buttons button {
+header > #header-buttons button {
   height: 50%;
   border: none;
   background-color: #14b8a6;
@@ -255,21 +255,21 @@ body > header > #header-buttons button {
 
 /* Main */
 
-body > main {
+main {
   padding: 1em 1em 1em 1em;
 }
 
-body > main h3 {
+main h3 {
   font-size: 1.2em;
   font-weight: 500;
   padding-bottom: 1em;
 }
 
-body > main > #projects > .container {
+#projects > .container {
   gap: 2em;
 }
 
-body > main > #projects .project-card {
+#projects .project-card {
   border-radius: 10px;
   background-color: #f5f5f5;
   display: grid;
@@ -279,14 +279,14 @@ body > main > #projects .project-card {
   ;
 }
 
-body > main > #projects .project-card > .project-card-line {
+#projects .project-card-line {
   grid-area: line;
   background-color: #14b8a6;
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
 }
 
-body > main > #projects .project-card .project-card-content {
+#projects .project-card-content {
   grid-area: content;
   display: grid;
   grid-template-columns: 1fr;
@@ -295,40 +295,40 @@ body > main > #projects .project-card .project-card-content {
   padding: 2em 1em 2em 1em;
 }
 
-body > main > #projects .project-card .project-card-text {
+#projects .project-card-text {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 }
 
-body > main > #projects .project-card .project-card-content h4 {
+#projects .project-card-content h4 {
   font-size: 1em;
   font-weight: 600;
 }
 
-body > main > #projects .project-card .project-card-content p {
+#projects .project-card-content p {
   font-size: 0.9em;
   font-weight: 400;
   color: #525252;
 }
 
-body > main > #projects .project-card .project-card-buttons {
+#projects .project-card-buttons {
   justify-self: end;
   align-self: center;
 }
 
-body > main > #projects button {
+#projects button {
   background-color: inherit;
   border: none;
   cursor: pointer;
 }
 
-body > main > #projects button > svg {
+#projects svg {
   width: 25px;
 }
 
 
-body > main > #announcements > .container {
+#announcements > .container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
