@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Odin - Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script defer type="module" src="js/main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <form action="" id="header-search">
+        <div>
+          <label>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              height="48" 
+              width="48"
+              viewBox="0 0 48 48"
+            >
+              <path d="M39.8 41.95 26.65 28.8q-1.5 1.3-3.5 2.025-2 .725-4.25.725-5.4 0-9.15-3.75T6 18.75q0-5.3 3.75-9.05 3.75-3.75 9.1-3.75 5.3 0 9.025 3.75 3.725 3.75 3.725 9.05 0 2.15-.7 4.15-.7 2-2.1 3.75L42 39.75Zm-20.95-13.4q4.05 0 6.9-2.875Q28.6 22.8 28.6 18.75t-2.85-6.925Q22.9 8.95 18.85 8.95q-4.1 0-6.975 2.875T9 18.75q0 4.05 2.875 6.925t6.975 2.875Z"/>
+            </svg>
+          </label>
+          <input type="text">
+        </div>
+      </form>
+
+      <div id="header-account">
+        <svg 
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 48 48"
+          height="48" 
+          width="48"
+        >
+          <path d="M6.2 19.65q0-4.05 1.7-7.675T12.75 5.8l2.05 2.25q-2.65 2.15-4.125 5.175T9.2 19.65Zm32.65 0q0-3.4-1.4-6.425T33.4 8.05l2.05-2.25q3.1 2.6 4.75 6.2t1.65 7.65ZM8 38v-3h4.2V19.7q0-4.1 2.475-7.425T21.2 8.1V6.65q0-1.15.825-1.9T24 4q1.15 0 1.975.75.825.75.825 1.9V8.1q4.05.85 6.55 4.175 2.5 3.325 2.5 7.425V35H40v3Zm16-14.75ZM24 44q-1.6 0-2.8-1.175Q20 41.65 20 40h8q0 1.65-1.175 2.825Q25.65 44 24 44Zm-8.8-9h17.65V19.7q0-3.75-2.55-6.325T24.05 10.8q-3.75 0-6.3 2.575T15.2 19.7Z"/>
+        </svg>
+
+        <img src="/img/icons/profile_julien.png" alt="">
+
+        <p>Morgan Oakley</p>
+      </div>
+
+      <div id="header-welcome">
+        <div>
+          <img src="/img/icons/profile_julien.png" alt="">
+        </div>
+
+        <div>
+          <p>Hi there,</p>
+          <p>Morgan Oakley (@morgan)</p>
+        </div>
+      </div>
+
+      <div id="header-buttons">
+        <button>
+          New
+        </button>
+        <button>
+          Upload
+        </button>
+        <button>
+          Share
+        </button>
+      </div>
+    </header>
+
+    <aside>
+      <div id="logo">
+        <svg 
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 48 48"
+          height="48" 
+          width="48"
+        >
+          <path d="M25.5 19.5V6H42v13.5ZM6 25.5V6h16.5v19.5ZM25.5 42V22.5H42V42ZM6 42V28.5h16.5V42Z"/>
+        </svg>
+        <p>
+          Dashboard
+        </p>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+                height="48" 
+                width="48"
+              >
+                <path d="M8 42V18L24.1 6 40 18v24H28.3V27.75h-8.65V42Z"/>
+              </svg>
+              <div>
+                Home
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+                height="48" 
+                width="48"
+              >
+                <path d="M7 44q-1.2 0-2.1-.9Q4 42.2 4 41V17q0-1.2.9-2.1.9-.9 2.1-.9h11.85V7q0-1.2.9-2.1.9-.9 2.1-.9h4.35q1.2 0 2.1.9.9.9.9 2.1v7H41q1.2 0 2.1.9.9.9.9 2.1v24q0 1.2-.9 2.1-.9.9-2.1.9Zm4.6-8.35h11.95v-.7q0-.9-.45-1.6-.45-.7-1.15-.95-1.6-.55-2.5-.725-.9-.175-1.75-.175-.95 0-2.025.225t-2.425.675q-.75.25-1.2.95-.45.7-.45 1.6Zm16.8-3.35h8.5v-2.5h-8.5Zm-10.7-2.5q1.15 0 1.925-.775.775-.775.775-1.925t-.775-1.925Q18.85 24.4 17.7 24.4t-1.925.775Q15 25.95 15 27.1t.775 1.925q.775.775 1.925.775Zm10.7-3.15h8.5v-2.5h-8.5ZM21.85 17h4.35V7h-4.35Z"/>
+              </svg>
+              <div>
+                Profile
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+                height="48" 
+                width="48"
+              >
+                <path d="m44 44-8-8H7q-1.15 0-2.075-.925Q4 34.15 4 33V7q0-1.15.925-2.075Q5.85 4 7 4h34q1.2 0 2.1.925Q44 5.85 44 7Z"/>
+              </svg>
+              <div>
+                Messages
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+                height="48" 
+                width="48"
+              >
+                <path d="m31.35 33.65 2.25-2.25-7.95-8V13.35h-3V24.6ZM24 44q-4.1 0-7.75-1.575-3.65-1.575-6.375-4.3-2.725-2.725-4.3-6.375Q4 28.1 4 24t1.575-7.75q1.575-3.65 4.3-6.375 2.725-2.725 6.375-4.3Q19.9 4 24 4t7.75 1.575q3.65 1.575 6.375 4.3 2.725 2.725 4.3 6.375Q44 19.9 44 24t-1.575 7.75q-1.575 3.65-4.3 6.375-2.725 2.725-6.375 4.3Q28.1 44 24 44Z"/>
+              </svg>
+              <div>
+                History
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+                height="48" 
+                width="48"
+              >
+                <path d="M7 46q-1.2 0-2.1-.9Q4 44.2 4 43V12.05h3V43h24.9v3Zm6-6q-1.2 0-2.1-.9-.9-.9-.9-2.1V5q0-1.2.9-2.1.9-.9 2.1-.9h17.4L42 13.6V37q0 1.2-.9 2.1-.9.9-2.1.9Zm15.9-25.1H39L28.9 5Z"/>
+              </svg>
+              <div>
+                Tasks
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+                height="48" 
+                width="48"
+              >
+                <path d="M0 36v-2.65q0-1.95 2.075-3.15T7.5 29q.6 0 1.175.025.575.025 1.125.125-.4.85-.6 1.75-.2.9-.2 1.9V36Zm12 0v-3.2q0-3.25 3.325-5.275Q18.65 25.5 24 25.5q5.4 0 8.7 2.025Q36 29.55 36 32.8V36Zm27 0v-3.2q0-1-.2-1.9-.2-.9-.6-1.75.55-.1 1.125-.125Q39.9 29 40.5 29q3.35 0 5.425 1.2Q48 31.4 48 33.35V36ZM7.5 27.5q-1.45 0-2.475-1.025Q4 25.45 4 24q0-1.45 1.025-2.475Q6.05 20.5 7.5 20.5q1.45 0 2.475 1.025Q11 22.55 11 24q0 1.45-1.025 2.475Q8.95 27.5 7.5 27.5Zm33 0q-1.45 0-2.475-1.025Q37 25.45 37 24q0-1.45 1.025-2.475Q39.05 20.5 40.5 20.5q1.45 0 2.475 1.025Q44 22.55 44 24q0 1.45-1.025 2.475Q41.95 27.5 40.5 27.5ZM24 24q-2.5 0-4.25-1.75T18 18q0-2.5 1.75-4.25T24 12q2.5 0 4.25 1.75T30 18q0 2.5-1.75 4.25T24 24Z"/>
+              </svg>
+              <div>
+                Communities
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <nav>
+        <ul>
+          <li>
+            <a href="#">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+                height="48" 
+                width="48"
+              >
+                <path d="m19.4 44-1-6.3q-.95-.35-2-.95t-1.85-1.25l-5.9 2.7L4 30l5.4-3.95q-.1-.45-.125-1.025Q9.25 24.45 9.25 24q0-.45.025-1.025T9.4 21.95L4 18l4.65-8.2 5.9 2.7q.8-.65 1.85-1.25t2-.9l1-6.35h9.2l1 6.3q.95.35 2.025.925Q32.7 11.8 33.45 12.5l5.9-2.7L44 18l-5.4 3.85q.1.5.125 1.075.025.575.025 1.075t-.025 1.05q-.025.55-.125 1.05L44 30l-4.65 8.2-5.9-2.7q-.8.65-1.825 1.275-1.025.625-2.025.925l-1 6.3ZM24 30.5q2.7 0 4.6-1.9 1.9-1.9 1.9-4.6 0-2.7-1.9-4.6-1.9-1.9-4.6-1.9-2.7 0-4.6 1.9-1.9 1.9-1.9 4.6 0 2.7 1.9 4.6 1.9 1.9 4.6 1.9Z"/>
+              </svg>
+              <div>
+                Settings
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+                height="48" 
+                width="48"
+              >
+                <path d="M23.85 35.7q.8 0 1.35-.55t.55-1.35q0-.8-.55-1.35t-1.35-.55q-.8 0-1.35.55t-.55 1.35q0 .8.55 1.35t1.35.55Zm-1.65-7.4h2.85q0-1.55.5-2.525.5-.975 1.75-2.225 1.65-1.65 2.3-2.925.65-1.275.65-2.675 0-2.65-1.7-4.2-1.7-1.55-4.6-1.55-2.55 0-4.375 1.225Q17.75 14.65 16.9 16.8l2.65 1.1q.7-1.4 1.8-2.125 1.1-.725 2.6-.725 1.6 0 2.525.8.925.8.925 2.2 0 1-.55 1.925T25 22.15q-1.85 1.75-2.325 3-.475 1.25-.475 3.15ZM9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h30q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Z"/>
+              </svg>
+              <div>
+                Support
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+                height="48" 
+                width="48"
+              >
+                <path d="m21.8 30.2 11.4-11.4-2.1-2.05-9.15 9.15-5.05-5.05-2.2 2.2ZM24 43.95q-7-1.75-11.5-8.125T8 21.85V9.95l16-6 16 6v11.9q0 7.6-4.5 13.975T24 43.95Z"/>
+              </svg>
+              <div>
+                Privacy
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <main>
+      <section id="projects">
+        <header>
+          <h3> Your Projects </h3>
+        </header>
+
+        <div class="container">
+          <article class="project-card">
+            <div class="project-card-line"></div>
+            <div class="project-card-content">
+              <div>
+                <h4>Super cool project</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique unde aliquid harum, iusto rem eius magnam hic enim! Ducimus, magnam. Eaque deleniti in dicta! Quis quod nulla aspernatur. Temporibus, facere.
+                </p>
+              </div>
+
+              <div class="project-card-buttons">
+                <button>
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    height="48" 
+                    width="48"
+                  >
+                    <path d="m16.15 37.75 7.85-4.7 7.85 4.75-2.1-8.9 6.9-6-9.1-.8L24 13.7l-3.55 8.35-9.1.8 6.9 6ZM11.65 44l3.25-14.05L4 20.5l14.4-1.25L24 6l5.6 13.25L44 20.5l-10.9 9.45L36.35 44 24 36.55ZM24 26.25Z"/>
+                  </svg>
+                </button>
+                <button>
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    height="48" 
+                    width="48"
+                  >
+                    <path d="M24 31.5q3.55 0 6.025-2.475Q32.5 26.55 32.5 23q0-3.55-2.475-6.025Q27.55 14.5 24 14.5q-3.55 0-6.025 2.475Q15.5 19.45 15.5 23q0 3.55 2.475 6.025Q20.45 31.5 24 31.5Zm0-2.9q-2.35 0-3.975-1.625T18.4 23q0-2.35 1.625-3.975T24 17.4q2.35 0 3.975 1.625T29.6 23q0 2.35-1.625 3.975T24 28.6Zm0 9.4q-7.3 0-13.2-4.15Q4.9 29.7 2 23q2.9-6.7 8.8-10.85Q16.7 8 24 8q7.3 0 13.2 4.15Q43.1 16.3 46 23q-2.9 6.7-8.8 10.85Q31.3 38 24 38Zm0-15Zm0 12q6.05 0 11.125-3.275T42.85 23q-2.65-5.45-7.725-8.725Q30.05 11 24 11t-11.125 3.275Q7.8 17.55 5.1 23q2.7 5.45 7.775 8.725Q17.95 35 24 35Z"/>
+                  </svg>
+                </button>
+                <button>
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    height="48" 
+                    width="48"
+                  >
+                    <path d="M11.7 46q-2.35 0-4.025-1.675Q6 42.65 6 40.3q0-2.4 1.675-4.05T11.7 34.6q.7 0 1.225.125.525.125 1.075.375l4.25-5.3q-.95-1.15-1.45-2.625t-.25-3.075l-6.05-2.05Q9.75 23.3 8.525 24t-2.825.7q-2.35 0-4.025-1.675Q0 21.35 0 19q0-2.4 1.675-4.05T5.7 13.3q2.4 0 4.05 1.65T11.4 19v.2l6.1 2.1q.9-1.6 2.175-2.45 1.275-.85 2.825-1.2V11.2q-1.95-.55-3.075-2.15Q18.3 7.45 18.3 5.7q0-2.4 1.675-4.05T24 0q2.4 0 4.05 1.65T29.7 5.7q0 1.75-1.15 3.35T25.5 11.2v6.45q1.55.35 2.85 1.2t2.2 2.45l6.05-2.1V19q0-2.4 1.675-4.05T42.3 13.3q2.4 0 4.05 1.65T48 19q0 2.35-1.65 4.025Q44.7 24.7 42.3 24.7q-1.6 0-2.85-.7t-1.95-1.95l-6.05 2.05q.25 1.6-.225 3.075T29.75 29.8L34 35.1q.55-.25 1.075-.375.525-.125 1.225-.125 2.4 0 4.05 1.65T42 40.3q0 2.35-1.65 4.025Q38.7 46 36.3 46q-2.35 0-4.025-1.675Q30.6 42.65 30.6 40.3q0-1 .275-1.8t.775-1.55l-4.25-5.3q-1.6.85-3.425.85-1.825 0-3.425-.85L16.35 37q.5.75.775 1.525.275.775.275 1.775 0 2.35-1.65 4.025Q14.1 46 11.7 46Zm-6-24.3q1.15 0 1.925-.775Q8.4 20.15 8.4 19t-.775-1.925Q6.85 16.3 5.7 16.3t-1.925.775Q3 17.85 3 19t.775 1.925q.775.775 1.925.775Zm6 21.3q1.15 0 1.925-.775.775-.775.775-1.925t-.775-1.925Q12.85 37.6 11.7 37.6t-1.925.775Q9 39.15 9 40.3t.775 1.925Q10.55 43 11.7 43ZM24 8.4q1.15 0 1.925-.775.775-.775.775-1.925t-.775-1.925Q25.15 3 24 3t-1.925.775Q21.3 4.55 21.3 5.7t.775 1.925Q22.85 8.4 24 8.4Zm.05 21.1q1.85 0 3.15-1.325 1.3-1.325 1.3-3.225 0-1.85-1.3-3.15-1.3-1.3-3.2-1.3-1.85 0-3.175 1.3Q19.5 23.1 19.5 25q0 1.85 1.325 3.175Q22.15 29.5 24.05 29.5ZM36.3 43q1.15 0 1.925-.775Q39 41.45 39 40.3t-.775-1.925Q37.45 37.6 36.3 37.6t-1.925.775q-.775.775-.775 1.925t.775 1.925Q35.15 43 36.3 43Zm6-21.3q1.15 0 1.925-.775Q45 20.15 45 19t-.775-1.925Q43.45 16.3 42.3 16.3t-1.925.775Q39.6 17.85 39.6 19t.775 1.925q.775.775 1.925.775ZM24 5.7ZM5.7 19ZM24 25Zm18.3-6ZM11.7 40.3Zm24.6 0Z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="announcements">
+        <header>
+          <h3> Announcements </h3>
+        </header>
+
+        <div class="container">
+          <article class="announcements-card">
+            <h4>
+              Site maintenance
+            </h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error totam quisquam est deleniti quis tempora quia atque exercitationem, mollitia necessitatibus! Inventore eius impedit eum consequuntur porro perspiciatis vero repellendus nihil?</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="trending">
+        <header>
+          <h3> Trending</h3>
+        </header>
+
+        <div class="container">
+          <div class="trending-card">
+            <img src="/img/icons/profile_julien.png" alt="" class="">
+            <div>
+              <p>@tegan</p>
+              <p>World Peace Builder</p>
+            </div> 
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
