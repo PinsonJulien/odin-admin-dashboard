@@ -8,10 +8,16 @@ body {
   color: #262626;
 }
 
+a {
+  font-size: inherit;
+  text-decoration: none;
+  cursor: pointer; 
+}
+
 /* Grids */
 body {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 3fr;
   grid-template-areas: 
     "aside header"
@@ -57,4 +63,47 @@ body > main {
 
 #trending {
   grid-area: trending;
+}
+
+
+/* Aside */
+body > aside {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  background-color: #14b8a6;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1.05em;
+}
+
+body > aside #logo {
+  font-size: 1.25em;
+}
+
+body > aside #logo,
+body > aside a {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto;
+
+  gap: 1em;
+  align-items: center;
+  fill: #f5f5f5;
+  color: #f5f5f5;
+}
+
+body > aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+body > aside svg {
+  height: 70%;
+  justify-self: center;
+}
+
+body > aside #logo svg {
+  height: 120%;
 }
