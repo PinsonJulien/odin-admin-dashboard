@@ -33,7 +33,7 @@ aside {
   grid-area: aside;
 }
 
-header {
+body > header {
   grid-area: header;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -83,17 +83,17 @@ main {
     "trending";
   }
 
-  header {
+  body > header {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0em !important;
   }
 
-  header > form {
+  body >header > form {
     grid-column: span 2;
   }
 
-  header > #header-welcome {
+  body >header > #header-welcome {
     grid-column: span 2;
   }
 
@@ -159,83 +159,83 @@ aside #logo svg {
 
 
 /* Header */
-header {
+body > header {
   padding: 1em 2em 1em 2em;
   gap: 2em;
   background-color: #f5f5f5;
 }
 
-header > form {
+body > header > form {
   display: flex;
   gap: 1em;
   height: 100%;
 }
 
-header > form > * {
+body > header > form > * {
   height: 50%;
   align-self: center;
 }
 
-header > form svg {
+body > header > form svg {
   height: 100%;
 }
 
-header > form input {
+body > header > form input {
   flex-grow: 1;
   border: none;
   background-color: #e2e8f0;
 }
 
-header > #header-account {
+body > header > #header-account {
   display: flex;
   gap: 1em;
   align-items: center;
   justify-content: end;
 }
 
-header > #header-account p {
+body > header > #header-account p {
   font-weight: 800;
   font-size: 1.0em;
   
 }
 
-header > #header-account svg {
+body > header > #header-account svg {
   width: 25px;
 }
 
-header > #header-account img {
+body > header > #header-account img {
   width: 50px;
 }
 
-header > #header-welcome {
+body > header > #header-welcome {
   display: flex;
   gap: 1em;
   align-items: center;
 }
 
-header > #header-welcome img {
+body > header > #header-welcome img {
   width: 75px;
 }
 
-header > #header-welcome > div {
+body > header > #header-welcome > div {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 } 
 
-header > #header-welcome p {
+body > header > #header-welcome p {
   font-weight: 700;
 }
 
-header > #header-welcome p:first-child {
+body > header > #header-welcome p:first-child {
   font-size: 0.9em;
 }
 
-header > #header-welcome p:last-child {
+body > header > #header-welcome p:last-child {
   font-size: 1.3em;
 }
 
-header > #header-buttons {
+body > header > #header-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -243,7 +243,7 @@ header > #header-buttons {
   align-items: center;
 }
 
-header > #header-buttons button {
+body > header > #header-buttons button {
   height: 50%;
   border: none;
   background-color: #14b8a6;
