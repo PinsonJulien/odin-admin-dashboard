@@ -172,15 +172,16 @@ body > header > form {
 }
 
 body > header > form > * {
-  height: 50%;
   align-self: center;
 }
 
 body > header > form svg {
-  height: 100%;
+  margin: 0 auto 0 auto;
+  width: 30px;
 }
 
 body > header > form input {
+  height: 30px;
   flex-grow: 1;
   border: none;
   background-color: #e2e8f0;
